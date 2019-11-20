@@ -37,13 +37,14 @@ public class QuickSort
     public static void main(String[] args)
     {
         QuickSort quickSort = new QuickSort();
-        int[] array = {5, 69, 12, 3, 56, 789, 2, 5648, 23};
+        //int[] array = {5, 69, 12, 3, 56, 789, 2, 5648, 0};
+        int[] array = {1,0};
         for (int i = 0; i <= array.length - 1; i++)
         {
             System.out.print(array[i] + "\t");
         }
         System.out.println();
-        quickSort.sort(array, 0, 8);
+        quickSort.sort(array, 0, 1);
         for (int i = 0; i <= array.length - 1; i++)
         {
             System.out.print(array[i] + "\t");
