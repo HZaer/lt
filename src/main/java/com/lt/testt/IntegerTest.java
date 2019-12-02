@@ -1,12 +1,15 @@
 package com.lt.testt;
 
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 public class IntegerTest
 {
     public static void main(String[] args)
     {
-        System.out.println(2/3);
+        System.out.println(2 / 3);
         //int a = Integer.valueOf("");
         //System.out.println(a);
         /*for(int i  =0;i<1000;i++){

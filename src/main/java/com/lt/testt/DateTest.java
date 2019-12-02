@@ -11,6 +11,14 @@ public class DateTest
     public static void main(String[] args)
         throws ParseException
     {
+
+        //
+        Calendar f = Calendar.getInstance();
+        f.setTime(new Date());
+        int day = f.get(Calendar.DATE);
+        f.set(Calendar.DATE, day - 5);
+        System.out.println(f.getTime());
+
         //1、
         System.out.println("is 1");
         Calendar c = Calendar.getInstance();
@@ -24,7 +32,7 @@ public class DateTest
             e.printStackTrace();
         }
         c.setTime(date);
-        int day = c.get(Calendar.DATE);
+        int dayss = c.get(Calendar.DATE);
         c.set(Calendar.DATE, day - 1);
 
         String dayBefore = new SimpleDateFormat("yyyy-MM-dd").format(c.getTime());
